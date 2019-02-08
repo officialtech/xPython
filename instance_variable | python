@@ -39,3 +39,40 @@ s = Student()
 s.assignment()
 s.display()
 
+
+
+******************************* WE CAN CREATE N NUMBER OF OBJECTS ******************************************************
+
+
+
+class Employee:
+    def assign(self, id, na, sal = 0.0):
+        self.idno = id
+        self.name = na
+        self.salary = sal
+        
+    def display(self):
+        print(self.idno)
+        print(self.name)
+        print(self.salary)
+        
+e1 = Employee() # first object
+e1.assign(100, 'jb')
+e1.display()
+
+print("---------")
+
+e2 = Employee()
+e2.assign(1010, 'Mr.chao', 250000.00)
+e2.display()
+
+print("---------")
+
+e1.salary = 180000.00
+e1.name = 'kim zong yang'
+e1.display()
+
+print("---------")
+
+e2.salary = 3750000.00
+e2.display()
