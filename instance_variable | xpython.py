@@ -77,3 +77,56 @@ e2.salary = 3750000.00
 e2.display()
 
 
+##############################################################################################################################
+
+x:- INSTANCE VARIABLES
+      
+      
+class Employee:
+    def assign(self, idno, name, salary):
+        self.idno = idno
+        self.name = name
+        self.salary = salary
+        
+    def disp(self):
+        print(self.idno)
+        print(self.name)
+        print(self.salary)
+        
+def show():
+    e = Employee()   # local variable 'e'
+    e.assign(1010, 'jb', 2564000.00)
+    e.disp()
+    print("outside class")
+
+show()      
+
+
+################################### Example on declaring object as local and global #############################################
+
+
+class Em:
+    def name_(self, idno, name, salary):
+        self.idno = idno
+        self.name = name
+        self.salary = salary
+        
+    def dp(self):
+        print(self.idno)
+        print(self.name)
+        print(self.salary)
+        
+f_o = Em()
+
+def sh():
+    s_o = Em()
+    s_o.name_(100, 'me', 98032000.00)
+    s_o.dp()
+    
+sh()
+
+f_o.name_(1001010, 'class Em', 5404000.00)
+f_o.dp()
+
+
+
